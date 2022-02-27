@@ -5,9 +5,12 @@
 
 installation instructions:
 > git clone ".../orbiting-hollowness"
+> 
 > npm install
+> 
 > npm run dev
 
 built using:
 > vite 
+> 
 > threejs 
