@@ -61,7 +61,9 @@ const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({
     normalMap: normalTexture,
-    map: moonTexture
+    map: moonTexture,
+    //makes wireframe
+    wireframe: true
   })
 )
 
@@ -71,13 +73,15 @@ moon.position.z = 25;
 moon.position.setX(-15);
 
 //venus
-const venusTexture = new THREE.TextureLoader().load('venus.jpg');
+//const venusTexture = new THREE.TextureLoader().load('venus.jpg');
+const venusTexture = new THREE.TextureLoader().load('2k_mercury.jpg');
 
 const venus = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({
     normalMap: normalTexture,
-    map: venusTexture
+    map: venusTexture,
+    wireframe: true
   })
 )
 
@@ -147,9 +151,9 @@ document.body.onscroll = moveCamera
 function animate(){
   requestAnimationFrame(animate);
 
-  torus.rotation.x += 0.01;
+  torus.rotation.x += 0.005;
   torus.rotation.y += 0.005;
-  torus.rotation.z += 0.01;
+  torus.rotation.z += 0.005;
 
   moon.rotation.x += 0.0025;
   moon.rotation.y += 0.0005;
