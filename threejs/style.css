@@ -24,3 +24,7 @@ header{
 section{
   grid-column: 2/8;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
