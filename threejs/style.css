@@ -6,9 +6,15 @@ canvas {
 
 main {
   position: absolute;
+  
+  color:azure;
+  margin: 0px;
+  padding: 0px;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+
+
 }
 
 header{
